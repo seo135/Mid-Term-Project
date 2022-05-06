@@ -9,14 +9,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap" rel="stylesheet">
         <style>
-            div#header{background-color:rgba(255, 99, 71, 0.678);;position:fixed;width:100%;height:30px; top:0;left:0;text-align:center;line-height:30px}
-            div a{font-size:20px;color:rgb(65, 64, 64);padding:20px;text-decoration:none;}
-
-            div#top{background-color: #8f8c8c7a; height:200px;}
-            body{font-family: 'Hahmlet', serif;background-color:white;margin:0;padding:0;}
+            div#header{background-color:#f8725acc;position:fixed;z-index:5;width:100%;height:30px; top:0;left:0;text-align:center;line-height:30px}
+            div a{font-size:20px;color:#474747;padding:20px;text-decoration:none;}
+            div#top{height:450px;position: relative;}
+            div#top::before{content:"";background-image: url(./image/head.jpg); height:450px; width:100%;background-size:cover;position: absolute;opacity: 0.6;}
+            div#top p{position: relative;}
+            body{font-family: 'Hahmlet', serif;margin:0;padding:0;}
             table{font-size:30px;}
             ul{width: 700px; margin-left:600; font-size:30px; line-height:50px;}
-            h1{background-color:#8f8c8c7a; border:7px solid tomato; border-style:dashed; font-size:80px; text-align: center; padding:3px;}
+            h1{border:8px solid tomato; font-size:80px; text-align: center; padding:3px;}
         </style>
  
     </head>
@@ -28,8 +29,8 @@
             <a href="#2">취미</a>
             <a href="#3">앞으로 하고 싶은 것</a></b>
         </div>
-        <div id="top" style="color:tomato; font-size:60px;">About me</div>
-        <div id="top" style="font-size:80px; line-height: 280px; text-align: center"><b>Hello, I'm SeoYoung!</b></div>    
+        <div id="top"><p style="color:tomato; font-size:60px;;">About me</p>
+        <p style="font-size:80px; line-height: 400px; text-align: center"><b>Hello, I'm SeoYoung!</b></p></div>  
         <img id="0" src="./image/증명사진.jpg" style="margin-left:450px; margin-top:90px; margin-right:30px; width:300px; height:300px; border:7px solid tomato; border-radius:100px;"/>
         <img src="./image/이미지2.jpeg" style="margin-top:90px; width:300px; height:300px; border:7px solid tomato; border-radius:100px;"/>
         <br/><br/><br/><br/><br/>
@@ -56,20 +57,22 @@
                 <th>soongjun3@naver.com</th>
             </tr>
         </table><br><br><br><br><br><br><br><br>
+        <div style="background-color:#e6f4fd;z-index:-2">
         <h1 id="1"><b>성격 / 특징</b></h1><br><br>
         <img src="./image/good.png" style="border-radius:150px; margin-left:400px; width:150px; height:150px; border:3px solid black" align="left">
-        <ul>
+        <ul><b>
             <li>꼼꼼합니다.</li>
             <li>신중합니다.</li>
             <li>책임감이 강합니다.</li>
-            <li>솔직합니다.</li>
+            <li>솔직합니다.</li></b>
         </ul><br><br><br>
         <img src="./image/bad.png" style="border-radius:150px; margin-left:400px; width:150px; height:150px; border:3px solid black" align="left">
-        <ul>
+        <ul><b>
             <li>일을 수행할 때 시간이 오래 걸리는 편입니다.</li>
             <li>낯을 많이 가립니다.</li>
-            <li>무뚝뚝하고 표현을 잘 못합니다.</li>
-        </ul><br><br>
+            <li>무뚝뚝하고 표현을 잘 못합니다.</li></b>
+        </ul><br><br></div>
+        <div style="background-color:#e4e2e2;z-index:-2">
         <h1 id="2"><b>취미</b></h1>
         <h2 style="text-align: center; font-size:50px"><i>"영화, 음악감상"</i></h2>
         <p style="text-align: center; font-size:23px">엄청난 집순이인 저는 집에서 보내는 많은데요, 주로 재밌는 영화를 보거나 노래를 들으면서 시간을 보냅니다!</p>
@@ -79,7 +82,7 @@
         </div><br><br><br><br>
         <h2 style="text-align: center; font-size:50px"><i>"혼자 여행하기"</i></h2>
         <p style="text-align: center; font-size:23px">여럿이 가는 여행도 좋지만 혼자하는 여행은 누군가에게 맞출 필요없이 내가 가고 싶을 때 가고, 쉬고 싶을 때 쉴 수 있고<br> 
-        여러가지 생각으로 차있던 머릿속을 비우고, 나와 여행에만 집중할 수 있기 때문에 좋아합니다.</p><br><br><br><br>
+        여러가지 생각으로 차있던 머릿속을 비우고, 나와 여행에만 집중할 수 있기 때문에 좋아합니다.</p><br><br><br><br><hr>
         
         <br id="4"><br><br><br><h2 style="font-size:40px; text-align: center;"><b>-<ins>재밌게 본 영화</ins>-</b></h2>
         <table width="1000" align = "center">
@@ -110,7 +113,8 @@
                 <th>i'm so tired...<br> - Lauv, Troye Sivan </th>
             </tr>
         </table>
-        <p style="font-size:20px; text-align: center;">*사진을 누르면 뮤직비디오로 이동합니다.</p><br><br><br><br><br><br><br><br>
+        <p style="font-size:20px; text-align: center;">*사진을 누르면 뮤직비디오로 이동합니다.</p><br><br><br><br><br><br><br><br></div>
+        <div style="background-color:#fcede3;z-index:-2">
         <h1 id="3"><b>앞으로 하고 싶은 것</b></h1>
         <table width="900" align = "center">
             <tr>
@@ -131,7 +135,7 @@
                 <th>국토대장정</th>
                 <th>새로운 취미 만들기</th>
             </tr>
-        </table><br><br><br><br><br>
+        </table><br><br><br><br><br></div>
         <div style="background-color: rgba(255, 99, 71, 0.753); height:40px; text-align:center; font-size:20px;line-height: 40px">🌼 SEO-YOUNG 🌼</div>
     </body>
 </html>
